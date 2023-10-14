@@ -1,0 +1,30 @@
+.banner {
+    &-cnt {
+        position: absolute;
+        z-index: 1;
+        background-size: auto;
+        background-repeat: no-repeat;
+        top: -66px;
+        height: 120px;
+        background: black;
+        width: 100%;
+        box-shadow: -40rem 0 11rem 1rem inset #1c4831e8;
+        text-align: center;
+        color: white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        *{
+            transition: all 0.1s linear;
+        }
+        &:hover{
+            color: rgb(255, 255, 255);
+            box-shadow: -40rem 0 11rem 1rem inset #13362ae8;
+            *{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.navbar {
+  z-index: 10;
+
+  .basket {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: x-large;
+    }
+
+    span {
+      margin: 0 8px;
+      padding: 1px;
+      background-color: $primary;
+      color: #fff;
+      min-width: 1.7rem;
+      display: inline-block;
+      border-radius: 36px;
+      text-align: center;
+      vertical-align: middle;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}

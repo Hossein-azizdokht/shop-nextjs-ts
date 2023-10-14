@@ -1,0 +1,13 @@
+div.home-cards {
+  border-color: #eee;
+  border-radius:12px !important;
+  padding: 2rem 0.5rem !important;
+  .price{
+    font-weight: 200;
+  }
+  img {
+    max-width: 120px;
+    margin: auto;
+    max-height: 130px;
+  }
+}

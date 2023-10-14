@@ -1,0 +1,243 @@
+.section {
+  &-title {
+    color: #888;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+
+    span {
+      padding: 0 1.5rem 0 0;
+      background-color: #fff;
+      position: relative;
+      top: 11px;
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+  }
+
+  .wave-decoration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+
+    &.top {
+      top: 0;
+      bottom: auto;
+      transform: rotate(180deg);
+    }
+  }
+
+  &.hasBg {
+    padding: 6rem 0 6rem 0;
+
+    // dark blue wave section
+    &.darkBlue {
+      background-image: linear-gradient(to bottom,
+          rgb(23, 30, 51) 100%,
+          rgb(15, 66, 172) 40%);
+
+      .section-title {
+        background-color: rgba(31, 47, 83, 0);
+        border-bottom: 1px solid rgba(#caab83, 0.226);
+
+        span {
+          color: var(--gold-text);
+          background-color: rgb(23, 30, 51);
+        }
+      }
+
+      .swiper-slide {
+        box-shadow: 0 25px 24px -14px #00000069;
+      }
+    }
+
+    // blue green wave section
+    &.lightGreenBlue {
+      background-image: linear-gradient(to bottom, rgb(138 207 204) 100%, rgb(255 212 214) 40%);
+
+      .section-title {
+        background-color: rgba(31, 47, 83, 0);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        span {
+          color: #fff;
+          background-color: #8acfcc;
+        }
+      }
+
+      .swiper-slide {
+        box-shadow: 0 25px 24px -14px #00000069;
+      }
+
+      .swiper-button-next {
+        background-color: #8acfcc !important;
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.37) inset;
+        }
+
+        &:after {
+          color: #fff;
+          opacity: 0.5;
+        }
+      }
+
+      .swiper-button-prev {
+        background-color: #8acfcc;
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.37) inset;
+        }
+
+        &:after {
+          color: #fff;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    // with background image wave section
+    &.withBackgroundImage {
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0 0 70rem 22rem inset #1f3d27c4;
+
+      .section-title {
+        background-color: rgba(31, 47, 83, 0);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        span {
+          color: #fff;
+          background-color: #475a44;
+          box-shadow: 4px 1px 3rem 1rem #475a44;
+        }
+      }
+
+      .swiper-slide {
+        box-shadow: 0 25px 24px -14px #00000069;
+      }
+
+      .swiper-button-next {
+        background-color: #475a44 !important;
+        box-shadow: 0px 0px 1rem 1rem #475a44a8;
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.37) inset;
+        }
+
+        &:after {
+          color: #fff;
+          opacity: 0.5;
+        }
+      }
+
+      .swiper-button-prev {
+        background-color: #475a44 !important;
+        box-shadow: 0px 0px 1rem 1rem #475a44a8;
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.37) inset;
+        }
+
+        &:after {
+          color: #fff;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    // light gray wave section
+    &.lightGray {
+      background-image: linear-gradient(to bottom,
+          rgb(238, 238, 238) 100%,
+          rgb(15, 66, 172) 40%);
+
+      .section-title {
+        background-color: rgba(31, 47, 83, 0);
+        border-bottom: 1px solid rgba(#9e896e, 0.226);
+
+        span {
+          color: var(--gold-text);
+          background-color: rgb(238, 238, 238);
+        }
+      }
+
+      .swiper-slide {
+        box-shadow: 0 25px 24px -14px #ffffff69;
+      }
+
+      .swiper-button-next {
+        background-color: rgb(238, 238, 238) !important;
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1) inset;
+        }
+
+        &:after {
+          color: var(--gold-text-dark);
+          opacity: 0.5;
+        }
+      }
+
+      .swiper-button-prev {
+        background-color: rgb(238, 238, 238);
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1) inset;
+        }
+
+        &:after {
+          color: var(--gold-text-dark);
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &.skiny {
+      background-image: linear-gradient(to bottom,
+          rgb(221, 183, 166) 100%,
+          rgb(255, 255, 255) 40%);
+
+      .section-title {
+        background-color: rgba(31, 47, 83, 0);
+        border-bottom: 1px solid rgba(#ffffff7a, 0.226);
+
+        span {
+          color: white;
+          background-color: rgb(221, 183, 166);
+        }
+      }
+
+      .swiper-slide {
+        box-shadow: 0 25px 24px -14px #00000000;
+      }
+
+      .swiper-button-next {
+        background-color: rgb(221, 183, 166) !important;
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1) inset;
+        }
+
+        &:after {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+
+      .swiper-button-prev {
+        background-color: rgb(221, 183, 166);
+
+        &:hover {
+          box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1) inset;
+        }
+
+        &:after {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+  }
+}

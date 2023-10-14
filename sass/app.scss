@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'global';
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import '_components/section';
+@import 'home';
+@import 'typography';
+@import '_components/homeCategories';
+@import '_components/banner';
+@import 'utilities';
+@import 'filter';
+@import 'storeList';
+@import 'overwrite';
+@import 'slideshow';

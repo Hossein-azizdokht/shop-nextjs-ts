@@ -1,0 +1,85 @@
+$font-path: "../assets/fonts/OpenSans/OpenSans-";
+
+@font-face {
+    src: url("#{$font-path}ExtraBold.woff2") format("woff2");
+    font-family: "opensans";
+    font-weight: 800;
+}
+
+@font-face {
+    src: url("#{$font-path}Bold.woff2") format("woff2");
+    font-family: "opensans";
+    font-weight: 700;
+}
+
+@font-face {
+    src: url("#{$font-path}SemiBold.woff2") format("woff2");
+    font-family: "opensans";
+    font-weight: 600;
+}
+
+@font-face {
+    src: url("#{$font-path}Medium.woff2") format("woff2");
+    font-family: "opensans";
+    font-weight: 500;
+}
+
+@font-face {
+    src: url("#{$font-path}Regular.woff2") format("woff2");
+    font-family: "opensans";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("#{$font-path}Light.woff2") format("woff2");
+    font-family: "opensans";
+    font-weight: 300;
+}
+
+body {
+    font-family: 'opensans';
+    font-size: 14px;
+}
+
+.overflow-unset {
+    overflow: unset !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+.progress-barr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: rgb(212, 149, 96);
+    transform-origin: 0%;
+    z-index: 100;
+}
+
+.swiper-slide-active {
+
+    .fadeInToRight {
+        animation: fadeInToRight 1s ease;
+    }
+}
+
+@keyframes fadeInToRight {
+    0% {
+        transform: translate(-100px, 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+    }
+}

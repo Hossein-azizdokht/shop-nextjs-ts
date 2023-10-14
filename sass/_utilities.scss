@@ -1,0 +1,34 @@
+// 03- infinity load
+.infinite-scroll-component {
+  p {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+// 02- Breadcrumb
+.breadcrumb {
+  a {
+    text-decoration: none;
+    span {
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0 2px;
+      color: gray;
+      &::after {
+        content: "/";
+        opacity: 0.4;
+        margin-left: 4px;
+      }
+    }
+    &:last-child {
+      span {
+        color: black;
+        font-weight: 500;
+        &:after {
+          content: "";
+        }
+      }
+    }
+  }
+}
